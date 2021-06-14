@@ -1,0 +1,26 @@
+{
+  "name": "com.dracon.dialogue",
+  "displayName": "Dracon Dialogue",
+  "version": "0.0.1",
+  "unity": "2019.1",
+  "description": "Graph-based narrative system for use in multiple choice dialogue systems",
+  "keywords": [
+    "dialogue",
+    "tool",
+    "graph",
+    "unity"
+  ],
+  "samples": [
+    {
+      "displayName": "Placeholder",
+      "description": "Placeholder sample for when I actually have extensible content to add",
+      "path": "Samples~/DialogueStuff"
+    }
+  ],
+  "author": {
+    "name": "Dracon Interactive",
+    "email": "draconinteractive@gmail.com",
+    "url": "http://www.draconinteractive.com.au"
+  },
+  "category": "Unity"
+}
