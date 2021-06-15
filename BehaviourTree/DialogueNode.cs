@@ -11,8 +11,10 @@ public class DialogueNode : CompositeNode
     public float duration;
     public string Sequence;
 
+    float startTime;
     protected override void OnStart()
     {
+        startTime = Time.time;
     }
 
     protected override void OnStop()
@@ -21,6 +23,11 @@ public class DialogueNode : CompositeNode
 
     protected override State OnUpdate()
     {
-        return State.Success;
+        if ((Time.time - startTime) > duration)
+        {
+            return State.Success;
+        }
+
+        return State.Running;
     }
 }
