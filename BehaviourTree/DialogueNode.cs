@@ -7,7 +7,7 @@ public class DialogueNode : CompositeNode
     [TextArea()]
     public string Text;
     [Space()]
-    public Character Character;
+    public DI_Dialogue.Character Character;
     public float duration;
     public string Sequence;
 
