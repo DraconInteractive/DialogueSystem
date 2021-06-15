@@ -21,7 +21,7 @@ public class BehaviourTreeView : GraphView {
         this.AddManipulator(new SelectionDragger());
         this.AddManipulator(new RectangleSelector());
 
-        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Scripts/Editor/BehaviourTreeEditor.uss");
+        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Packages/com.dracon.dialogue/Scripts/Editor/BehaviourTreeEditor.uss");
         styleSheets.Add(styleSheet);
     }
 
