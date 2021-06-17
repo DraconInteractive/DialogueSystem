@@ -11,4 +11,9 @@ public abstract class CompositeNode : Node
         node.children = children.ConvertAll(c => c.Clone());
         return node;
     }
+
+    public override List<Node> Children ()
+    {
+        return children;
+    }
 }

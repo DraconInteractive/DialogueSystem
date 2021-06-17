@@ -11,4 +11,9 @@ public abstract class DecoratorNode : Node
         node.child = child.Clone();
         return node;
     }
+
+    public override List<Node> Children ()
+    {
+        return new List<Node>() { child };
+    }
 }
