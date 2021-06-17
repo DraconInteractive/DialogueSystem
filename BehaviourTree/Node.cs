@@ -39,4 +39,5 @@ public abstract class Node : ScriptableObject
     protected abstract void OnStop();
     protected abstract State OnUpdate();
     public abstract List<Node> Children();
+    public bool HasChildren => (Children() != null && Children().Count > 0);
 }
